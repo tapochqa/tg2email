@@ -111,6 +111,7 @@
         
 
         [{  :name "attachment"
+            :filename (:file_path (telegram/get-file config id))
             :content (io/input-stream
                        (str "https://api.telegram.org/file/bot"
                                                 (:token config)
