@@ -47,7 +47,7 @@ uberjar:
 zip:
 	zip -j target/${NAME}.zip conf/handler.sh builds/${NAME}-Linux-x86_64
 
-bash-package: build-binary-docker zip
+bash-package: build-binary-local zip
 
 run-test:
 	lein compile && lein install && lein run \
