@@ -19,12 +19,13 @@
 
 (defn -main
   [tg-token
+   test-server
    mailgun-token
    domain
    to]
   
   (let [config 
-        { :test-server false
+        { :test-server test-server
           :token tg-token
           :mailgun-token mailgun-token
           :domain domain
