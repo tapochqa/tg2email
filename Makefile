@@ -63,7 +63,7 @@ upload-version:
 deploy-version:
 	yc serverless function version create \
 		--function-name=${NAME} \
-		--runtime bash \
+		--runtime bash-2204 \
 		--entrypoint handler.sh \
 		--memory 128m \
 		--execution-timeout 3s \
