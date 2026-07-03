@@ -68,7 +68,7 @@ deploy-version:
 		--memory 128m \
 		--execution-timeout 3s \
 		--environment TELEGRAM_BOT_TOKEN=$(token) \
-		--environment TEST_SERVER=$(test-server)
+		--environment TEST_SERVER=$(test-server) \
 		--environment MAILGUN_TOKEN=$(mailgun-token) \
 		--environment DOMAIN=$(domain) \
 		--environment TO=$(to) \
